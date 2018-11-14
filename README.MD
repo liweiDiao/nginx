@@ -6,14 +6,20 @@ yum -y install gcc automake autoconf libtool make
 安装g++:    
 yum install gcc gcc-c++    
 
-## 一、选定安装文件目录    
-我选择的目录是 /apps/, 在根目录下建立了一个apps目录，放在这个目录下。然后依次执行如下命令：    
+## 选定安装文件目录    
+我选择的目录是 /apps/, 在根目录下建立了一个apps目录，放在这个目录下。
+# 安装PCRE库    
+依次执行如下命令：    
 cd apps    
 wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz   
 cd pcre-8.39    
 ./configure    
 make    
-make install    
+make install  
+# 安装zlib库    
+cd /apps    
+wget http://zlib.net/zlib-1.2.11.tar.gz    
+
 
 
 
